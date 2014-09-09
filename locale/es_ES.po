@@ -1,0 +1,119 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:purchase.line,opportunity_lines:"
+msgid "Opportunity Lines"
+msgstr "Líneas de oportunidad"
+
+msgctxt "field:purchase.line,sale_lines:"
+msgid "Sale Lines"
+msgstr "Líneas de venta"
+
+msgctxt "field:purchase.purchase,opportunities:"
+msgid "Sales"
+msgstr "Ventas"
+
+msgctxt "field:purchase.purchase,sales:"
+msgid "Sales"
+msgstr "Ventas"
+
+msgctxt "field:sale.line,purchase_lines:"
+msgid "Purchase Lines"
+msgstr "Líneas de compra"
+
+msgctxt "field:sale.line-purchase.line,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:sale.line-purchase.line,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:sale.line-purchase.line,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:sale.line-purchase.line,purchase_line:"
+msgid "Purchase Line"
+msgstr "Línea de compra"
+
+msgctxt "field:sale.line-purchase.line,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:sale.line-purchase.line,sale_line:"
+msgid "Sale Line"
+msgstr "Línea de venta"
+
+msgctxt "field:sale.line-purchase.line,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:sale.line-purchase.line,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:sale.opportunity,purchases:"
+msgid "Purchases"
+msgstr "Compras"
+
+msgctxt "field:sale.opportunity.line,purchase_lines:"
+msgid "Purchase Lines"
+msgstr "Líneas de compra"
+
+msgctxt "field:sale.opportunity.line-purchase.line,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:sale.opportunity.line-purchase.line,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:sale.opportunity.line-purchase.line,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:sale.opportunity.line-purchase.line,opportunity_line:"
+msgid "Opportunity Line"
+msgstr "Línea de oportunidad"
+
+msgctxt "field:sale.opportunity.line-purchase.line,purchase_line:"
+msgid "Purchase Line"
+msgstr "Línea de compra"
+
+msgctxt "field:sale.opportunity.line-purchase.line,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:sale.opportunity.line-purchase.line,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:sale.opportunity.line-purchase.line,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:sale.sale,purchases:"
+msgid "Purchases"
+msgstr "Compras"
+
+msgctxt "model:ir.action,name:act_opportunities_from_purchases"
+msgid "Leads/Opportunities"
+msgstr "Inicitivas/Oportunidades"
+
+msgctxt "model:ir.action,name:act_sale_from_purchases"
+msgid "Sales"
+msgstr "Ventas"
+
+msgctxt "model:sale.line-purchase.line,name:"
+msgid "Sale Line - Purchase Line"
+msgstr "Línea de venta - Línea de compra"
+
+msgctxt "model:sale.opportunity.line-purchase.line,name:"
+msgid "Opportunity Line - Purchase Line"
+msgstr "Línea de oportunidad - Línea de compra"
+
+msgctxt "view:purchase.line:"
+msgid "Sales and Opportunities"
+msgstr "Ventas i oportunidades"
