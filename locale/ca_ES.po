@@ -11,8 +11,8 @@ msgid "Sale Lines"
 msgstr "Línies de venda"
 
 msgctxt "field:purchase.purchase,opportunities:"
-msgid "Sales"
-msgstr "Vendes"
+msgid "Opportunities"
+msgstr "Oportunitats"
 
 msgctxt "field:purchase.purchase,sales:"
 msgid "Sales"
@@ -24,11 +24,11 @@ msgstr "Línies de compra"
 
 msgctxt "field:sale.line-purchase.line,create_date:"
 msgid "Create Date"
-msgstr "Data de creació"
+msgstr "Data creació"
 
 msgctxt "field:sale.line-purchase.line,create_uid:"
 msgid "Create User"
-msgstr "Usuari de creació"
+msgstr "Usuari creació"
 
 msgctxt "field:sale.line-purchase.line,id:"
 msgid "ID"
@@ -64,11 +64,11 @@ msgstr "Línies de compra"
 
 msgctxt "field:sale.opportunity.line-purchase.line,create_date:"
 msgid "Create Date"
-msgstr "Data de creació"
+msgstr "Data creació"
 
 msgctxt "field:sale.opportunity.line-purchase.line,create_uid:"
 msgid "Create User"
-msgstr "Usuari de creació"
+msgstr "Usuari creació"
 
 msgctxt "field:sale.opportunity.line-purchase.line,id:"
 msgid "ID"

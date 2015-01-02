@@ -11,10 +11,11 @@ __metaclass__ = PoolMeta
 class Purchase:
     __name__ = 'purchase.purchase'
 
-    sales = fields.Function(fields.One2Many('sale.sale', None,
-            'Sales'), 'get_sales')
+    sales = fields.Function(fields.One2Many('sale.sale', None, 'Sales'),
+        'get_sales', searcher='search_sales')
     opportunities = fields.Function(fields.One2Many('sale.opportunity', None,
-            'Sales'), 'get_opportunities')
+            'Opportunities'),
+        'get_opportunities', searcher='search_opportunities')
 
     def get_sales(self, name):
         pool = Pool()
@@ -24,6 +25,10 @@ class Purchase:
                 ])
         return list(set([l.sale.id for l in lines]))
 
+    @classmethod
+    def search_sales(cls, name, clause):
+        return [('lines.sale_lines.sale.id',) + tuple(clause[1:])]
+
     def get_opportunities(self, name):
         pool = Pool()
         Line = pool.get('sale.opportunity.line')
@@ -31,6 +36,12 @@ class Purchase:
                 ('purchase_lines', 'in', [x.id for x in self.lines]),
                 ])
         return list(set([l.opportunity.id for l in lines]))
+
+    @classmethod
+    def search_opportunities(cls, name, clause):
+        return [
+            ('lines.opportunity_lines.opportunity.id',) + tuple(clause[1:]),
+            ]
 
 
 class PurchaseLine:
