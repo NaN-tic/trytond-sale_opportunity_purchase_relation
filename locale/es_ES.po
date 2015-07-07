@@ -116,4 +116,4 @@ msgstr "Línea de oportunidad - Línea de compra"
 
 msgctxt "view:purchase.line:"
 msgid "Sales and Opportunities"
-msgstr "Ventas i oportunidades"
+msgstr "Ventas y oportunidades"
