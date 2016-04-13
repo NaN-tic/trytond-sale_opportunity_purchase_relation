@@ -1,15 +1,15 @@
-#The COPYRIGHT file at the top level of this repository contains
-#the full copyright notices and license terms.
+# The COPYRIGHT file at the top level of this repository contains
+# the full copyright notices and license terms.
 from trytond.model import ModelSQL, fields
 from trytond.pyson import Eval
 from trytond.pool import PoolMeta
 
 __all__ = ['Sale', 'SaleLinePurchaseLine', 'SaleLine']
-__metaclass__ = PoolMeta
 
 
 class Sale:
     __name__ = 'sale.sale'
+    __metaclass__ = PoolMeta
 
     purchases = fields.Function(fields.One2Many('purchase.purchase', None,
             'Purchases'), 'get_purchases', searcher='search_purchases')
@@ -34,6 +34,7 @@ class SaleLinePurchaseLine(ModelSQL):
 
 class SaleLine:
     __name__ = 'sale.line'
+    __metaclass__ = PoolMeta
 
     purchase_lines = fields.Many2Many('sale.line-purchase.line',
         'sale_line', 'purchase_line', 'Purchase Lines', readonly=True,

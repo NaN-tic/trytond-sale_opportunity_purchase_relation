@@ -19,7 +19,7 @@
         <record model="ir.action.act_window" id="act_opportunities_from_purchases">
             <field name="name">Leads/Opportunities</field>
             <field name="res_model">sale.opportunity</field>
-            <field name="domain">[('purchases', 'in', Eval('active_ids'))]</field>
+            <field name="domain" eval="[('purchases', 'in', Eval('active_ids'))]" pyson="1" />
         </record>
 
         <record model="ir.action.keyword"
