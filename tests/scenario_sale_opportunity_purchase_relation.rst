@@ -17,7 +17,6 @@ Imports::
     ...     set_fiscalyear_invoice_sequences, create_payment_term
     >>> today = datetime.date.today()
 
-
 Create database::
 
     >>> config = config.set_trytond()
@@ -138,7 +137,6 @@ Create an Opportunity::
     >>> opportunity_line, = opportunity.lines
     >>> opportunity_line = OpportunityLine(opportunity_line.id)
 
-
 Create a purchase to fill the opportunity and relate them::
 
     >>> Purchase = Model.get('purchase.purchase')
@@ -158,7 +156,6 @@ Create a purchase to fill the opportunity and relate them::
 Convert the opportunity and check sale is related to the same purchase line::
 
     >>> opportunity.click('convert')
-    >>> Sale = Model.get('sale.sale')
     >>> sale, = opportunity.sales
     >>> sale_line, = sale.lines
     >>> sale_line_purchase_line, = sale_line.purchase_lines
@@ -169,7 +166,6 @@ Convert the opportunity and check sale is related to the same purchase line::
     True
     >>> purchase.opportunities == [opportunity]
     True
-
 
 Create a new opportunity related to the same purchase line::
 
