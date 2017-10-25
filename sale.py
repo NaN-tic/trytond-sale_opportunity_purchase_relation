@@ -42,3 +42,11 @@ class SaleLine:
             ('product', '=', Eval('product', 0)),
             ],
         depends=['product'])
+
+    @classmethod
+    def copy(cls, lines, default=None):
+        if default is None:
+            default = {}
+        default = default.copy()
+        default['purchase_lines'] = None
+        return super(SaleLine, cls).copy(lines, default=default)

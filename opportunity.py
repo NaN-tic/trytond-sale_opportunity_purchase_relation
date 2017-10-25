@@ -75,3 +75,11 @@ class OpportunityLine:
                     line.purchase_lines = sale_line.purchase_lines
                     break
         return line
+
+    @classmethod
+    def copy(cls, lines, default=None):
+        if default is None:
+            default = {}
+        default = default.copy()
+        default['purchase_lines'] = None
+        return super(OpportunityLine, cls).copy(lines, default=default)
